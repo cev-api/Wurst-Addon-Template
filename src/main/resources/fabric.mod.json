@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "wurst-addon-template",
+  "version": "${version}",
+  "name": "Wurst Addon Template",
+  "description": "An addon template for Wurst addons.",
+  "authors": [
+    "CevAPI"
+  ],
+  "contact": {
+    "sources": "https://github.com/cev-api/Wurst7-CevAPI"
+  },
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "wurst": [
+      "com.example.addon.AddonTemplate"
+    ]
+  },
+  "mixins": [
+    "wurst-addon-template.mixins.json"
+  ],
+  "depends": {
+    "java": ">=21",
+    "minecraft": ["${mc_version}"],
+    "fabricloader": ">=0.18.0",
+    "fabric-api": "*",
+    "wurst-cevapi": "*"
+  }
+}
